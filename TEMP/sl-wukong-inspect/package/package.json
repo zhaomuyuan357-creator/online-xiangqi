@@ -1,0 +1,46 @@
+{
+  "name": "sl-wukong-engine",
+  "version": "1.0.0",
+  "description": "Wukong - A powerful TypeScript Xiangqi (Chinese Chess) engine with advanced AI search algorithms",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "compile": "tsc",
+    "obfuscate": "node scripts/build.js",
+    "build": "npm run clean && npm run compile && npm run obfuscate",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "xiangqi",
+    "chinese-chess",
+    "chess-engine",
+    "game-engine",
+    "ai",
+    "minimax",
+    "negamax",
+    "board-game"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/sl-wukong-engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/sl-wukong-engine/issues"
+  },
+  "homepage": "https://github.com/yourusername/sl-wukong-engine#readme",
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "javascript-obfuscator": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

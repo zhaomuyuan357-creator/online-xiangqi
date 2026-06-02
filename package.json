@@ -1,0 +1,15 @@
+{
+  "name": "online-xiangqi",
+  "version": "0.1.0",
+  "private": true,
+  "description": "线上象棋 — 浏览器端中国象棋双人实时对战",
+  "scripts": {
+    "dev:client": "pnpm --filter client dev",
+    "dev:server": "pnpm --filter @xiangqi/server dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build": "pnpm --filter client build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
